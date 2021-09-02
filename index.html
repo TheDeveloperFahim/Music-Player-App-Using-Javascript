@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player App Using JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="music_container">
+        <h2 id="title">Brocken Angle</h2>
+        <h3 id="artist">Arash</h3>
+        <div class="img_container"><img src="img/01.jpg" alt="" /></div>
+        <audio src="audio/music-1.mp3"></audio>
+        <!-- Progress Bar -->
+        <div class="progressbar_container" id="progressbar_container">
+          <div class="progressbar_duration_meter">
+            <div id="current_time">
+              <span id="curMin">00</span>
+              <span id="curSec">00</span>
+            </div>
+               <div id="duration">3:22</div>
+          </div>
+        
+          <div class="progress_div" id="progress_div">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <div class="music_controls">
+          <i class="fas fa-backward" id="prev"></i>
+          <i class="fas fa-play main_button" id="play"></i>
+          <i class="fas fa-forward" id="next"></i>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/8db593e5ef.js"></script>
+  </body>
+</html>
